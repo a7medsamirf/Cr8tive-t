@@ -1,0 +1,667 @@
+/*
+Template Name: Cr8tive | Personal Portfolio HTML5 Template
+Author: Ahmed Samir
+Author URI: https://www.facebook.com/a7med.samir.f
+Description: Meruem | Personal Portfolio HTML5 Template
+Version: 1.0
+Tags: bootstrap, clean, creative, cv, freelancer, gallery, html5, one page, personal, portfolio, responsive, resume, simple, vcard
+*/
+
+/*
+Style Index
+==================================================
+    1. Basic Setup
+    2. Navigation Bar
+    3. Header Section
+    4. About Section
+    5. Portfolio Section
+    6. Our Team Section
+    7. Testimonials Section
+    8. Our Clients Section
+    9. Contact Section
+    10. Media Query
+*/
+
+/* Main Css Rules  for Main Elements in The project */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+/*--------------------------------------------------
+[1. Start Basic Setup ]
+--------------------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #fff;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Acme', sans-serif;
+    color: #1e0404;
+}
+
+.btn-secondary {
+    background-color: #181b1e !important;
+}
+
+.btn-warning {
+    background-color: #eeb501 !important;
+    color: #fff !important;
+}
+
+.dropdown-menu {
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    min-width: 21rem;
+    padding: 0.9rem 23px;
+    margin: 1.6rem 0px 0px;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+/*--------------------------------------------------
+[2. Start Navigation Bar ]
+--------------------------------------------------*/
+
+.fixed-top.scrolled {
+    background-color: #fff !important;
+    -webkit-transition: background-color 700ms ease-in-out;
+    transition: background-color 700ms ease-in-out;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    z-index: 999;
+}
+
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0) !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #eeb501;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #eeb501;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: #eeb501;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #eeb501;
+}
+
+.fixed-top.scrolled .navbar-brand,
+.fixed-top.scrolled .nav-link,
+.fixed-top.scrolled .active {
+    color: #000;
+}
+
+.navbar-dark .icon {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 20px;
+    padding-top: 5px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-dark .icon .active {
+    color: #000
+}
+
+.nav-item a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #eeb501;
+    margin-top: 5px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.navbar-dark .button.btn.btn-warning {
+    margin: 0;
+}
+
+.navbar-brand h1 {
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #eeb501;
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 2px;
+    font-size: 45px;
+    line-height: 1;
+}
+
+.navbar-brand span {
+    color: #fff;
+}
+
+.navbar-brand p {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/*--------------------------------------------------
+[3. Start Header Section ]
+--------------------------------------------------*/
+
+.header {
+    background: url('../images/header-bg.jpg') center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header .content .right h1 {
+    font-size: 6.5rem;
+    font-weight: bold;
+    color: #eeb501;
+    font-family: 'Acme', sans-serif;
+}
+
+.header .content .right h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    line-height: .5;
+}
+
+.header .content {
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+}
+
+/*--------------------------------------------------
+[4. Start About and Services Section ]
+--------------------------------------------------*/
+
+#about-services {
+    padding: 100px 0;
+    background: url(../images/About-bg.png) center no-repeat;
+    background-size: cover;
+    color: #000
+}
+
+#about-services .text-box {
+    padding: 50px;
+}
+
+#about-services .text-box h2 {
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 2px;
+    color: #1e0404;
+}
+
+#about-services .text-box h1 {
+    background-color: #eeb501;
+    color: #fff;
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+}
+
+#about-services .serviceBox .service-icon i {
+    color: #fff;
+    background-color: #eeb501;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    font-size: 25px;
+}
+
+#about-services .serviceBox .title {
+    font-size: 1.5rem;
+    font-family: 'Acme', sans-serif;
+    color: #1e0404;
+}
+
+#about-services .serviceBox .description {
+    color: #1e0404;
+
+}
+
+/*--------------------------------------------------
+[5. Start Portfolio Section ]
+--------------------------------------------------*/
+
+#portfolio {
+    padding: 100px 0;
+    background: url(../images/portfolio/portfolio-bg.jpg) center no-repeat;
+    background-size: cover;
+    color: #fff !important;
+}
+
+#portfolio h1 {
+    color: #fff;
+}
+
+#portfolio .btn-outline-warning {
+    color: #fff;
+    border-color: #fff;
+}
+
+/*--------------------------------------------------
+[6. Start Our Team Section ]
+--------------------------------------------------*/
+
+#our-team {
+    padding: 100px 0;
+    background: url(../images/ourteam/ourteam-bg.jpg) center no-repeat;
+    background-size: cover;
+    color: #1e0404;
+}
+
+#our-team .our-team {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+#our-team .our-team .pic:before {
+    content: "";
+    background: #eeb501;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.78;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#our-team .our-team:hover .pic:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+#our-team .our-team .pic img {
+    width: 100%;
+    height: auto;
+}
+
+#our-team .our-team .social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#our-team .our-team:hover .social {
+    opacity: 1;
+}
+
+#our-team .our-team .social li {
+    display: inline-block;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#our-team .our-team .social li:nth-child(1) {
+    -webkit-transform: translate3d(22px, -19px, 0px);
+    transform: translate3d(22px, -19px, 0px);
+}
+
+#our-team .our-team:hover .social li:nth-child(1) {
+    -webkit-transform: translate3d(62px, -19px, 0px);
+    transform: translate3d(62px, -19px, 0px);
+}
+
+#our-team .our-team .social li:nth-child(2) {
+    -webkit-transform: translate3d(36px, 38px, 0px);
+    transform: translate3d(36px, 38px, 0px);
+}
+
+#our-team .our-team:hover .social li:nth-child(2) {
+    -webkit-transform: translate3d(36px, 8px, 0px);
+    transform: translate3d(36px, 8px, 0px);
+}
+
+#our-team .our-team .social li:nth-child(3) {
+    -webkit-transform: translate3d(-18px, -75px, 0px);
+    transform: translate3d(-18px, -75px, 0px);
+}
+
+#our-team .our-team:hover .social li:nth-child(3) {
+    -webkit-transform: translate3d(-18px, -46px, 0px);
+    transform: translate3d(-18px, -46px, 0px);
+}
+
+#our-team .our-team .social li:nth-child(4) {
+    -webkit-transform: translate3d(-5px, -19px, 0px);
+    transform: translate3d(-5px, -19px, 0px);
+}
+
+#our-team .our-team:hover .social li:nth-child(4) {
+    -webkit-transform: translate3d(-43px, -19px, 0px);
+    transform: translate3d(-43px, -19px, 0px);
+}
+
+#our-team .our-team .social li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: #333;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 15px 0 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#our-team .our-team .social li a:hover {
+    line-height: 35px;
+    background: #fff;
+    color: #333;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#our-team .our-team .social li a i {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#our-team .our-team .social li a:hover i {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#our-team .our-team .team-content {
+    padding: 15px 10px;
+    background: #fff;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#our-team .our-team .title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+}
+
+#our-team .our-team small {
+    display: block;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 8px;
+}
+
+#our-team .our-team .team-layer {
+    width: 100%;
+    padding: 34px 10px;
+    background: #f7f7f7;
+    border-bottom: 2px solid #eeb501;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#our-team .our-team:hover .team-layer {
+    bottom: 0;
+    opacity: 1;
+}
+
+#our-team .our-team .team-layer a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#our-team .our-team .team-layer a:hover {
+    color: #716a9e;
+}
+
+#our-team .our-team .post {
+    display: block;
+    font-size: 14px;
+    color: #999;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 990px) {
+    #our-team .our-team {
+        margin-bottom: 35px;
+    }
+}
+
+/*--------------------------------------------------
+[7. Start Testimonials Section ]
+--------------------------------------------------*/
+
+#testimonials {
+    padding: 100px 0;
+    background: url(../images/Testimonials.jpg) center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+#testimonials h1 {
+    color: #fff
+}
+
+#testimonials .testimonial .testimonial-content {
+    padding: 35px 25px 35px 50px;
+    margin-bottom: 35px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    position: relative;
+}
+
+#testimonials .testimonial .testimonial-content:after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    bottom: -10px;
+    left: 22px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#testimonials .testimonial-content .testimonial-icon {
+    width: 50px;
+    height: 45px;
+    background: #eeb501;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    line-height: 42px;
+    position: absolute;
+    top: 37px;
+    left: -19px;
+}
+
+#testimonials .testimonial-content .testimonial-icon:before {
+    content: "";
+    border-bottom: 16px solid #eeb501;
+    border-left: 18px solid transparent;
+    position: absolute;
+    top: -16px;
+    left: 1px;
+}
+
+#testimonials .testimonial .description {
+    font-size: 15px;
+    color: #8a8a8a;
+    line-height: 23px;
+    margin: 0;
+}
+
+#testimonials .testimonial .title {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+}
+
+#testimonials .testimonial .post {
+    display: block;
+    font-size: 14px;
+    color: #eeb501;
+}
+
+#testimonials .owl-theme .owl-controls {
+    margin-top: 20px;
+}
+
+#testimonials .owl-theme .owl-controls .owl-page span {
+    background: #ccc;
+    opacity: 1;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+#testimonials .owl-theme .owl-controls .owl-page.active span,
+#testimonials .owl-theme .owl-controls.clickable .owl-page:hover span {
+    background: #eeb501;
+}
+
+/*--------------------------------------------------
+[8. Start Our Clients Section ]
+--------------------------------------------------*/
+
+#our-clients {
+    padding: 100px 0;
+    background: url(../images/Clients/Clients-bg.jpg) center no-repeat;
+    background-size: cover;
+    color: #181b1e;
+}
+
+/*--------------------------------------------------
+[9. Start Contact Section ]
+--------------------------------------------------*/
+
+#contact {
+    padding-top: 100px;
+    background: url(../images/contact-bg.jpg) center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+#contact h1 {
+    color: #fff;
+}
+
+#contact .social-icon i {
+    font-size: 18px;
+    background-color: #eeb501;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    cursor: pointer;
+    margin-right: 10px
+}
+
+#contact .form-row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#contact .form-control {
+    color: #495057;
+    background-color: #2e2e2e;
+    border: 1px solid #2e2e2e;
+    border-radius: 0
+}#contact .copyright
+{
+    padding: 20px;
+    border-top: 2px solid #eeb501;
+}
+
+/*--------------------------------------------------
+[10. Start Media Query Section]
+--------------------------------------------------*/
+
+@media only screen and (max-width: 990px) {
+
+    .header .content
+    {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    .navbar-brand h1 {
+        font-size: 35px;
+    }
+    .navbar-brand p {
+        font-size: 14px;
+    }
+
+    #about-services {
+        padding: 0
+    }
+}
