@@ -13,17 +13,6 @@ $(function () {
     new WOW().init();
     }); 
 
-  // Start niceScroll
-  $(document).ready(function () {
-    $("html").niceScroll({
-      scrollspeed: "100",
-      cursorcolor: "#eeb501",
-      cursorborder: "3px solid #eeb501",
-      cursorborderradius:0,
-      sensitiverail: false,
-  });
-}); 
-     
     // Start dropdown
   $('.dropdown').on('show.bs.dropdown', function (e) {
     $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
